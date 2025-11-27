@@ -1,0 +1,6 @@
+# Google AdSense
+# 실제 배포 시 Google AdSense Publisher ID로 교체하세요
+# 형식: google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# 예시 (실제 ID로 교체 필요):
+# google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
