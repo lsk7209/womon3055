@@ -59,6 +59,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        <meta name="google-site-verification" content="uz779zK5g2saxQqa0NqwsR23iEcral9HimKjcuPoqHE" />
+        <meta name="naver-site-verification" content="3b13b46ef2711037234c801220cb233ed8f03f39" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3050601904412736" crossOrigin="anonymous"></script>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#e11d48" />
         <link
