@@ -44,7 +44,11 @@ export default function HormoneTestPage() {
         if (currentStep < HORMONE_QUESTIONS.length - 1) {
             setTimeout(() => {
                 setCurrentStep((prev) => prev + 1);
-            }, 300); // 300ms 딜레이로 자연스러운 전환
+            }, 300);
+        } else {
+            setTimeout(() => {
+                handleComplete();
+            }, 300);
         }
     };
 

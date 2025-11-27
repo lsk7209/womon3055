@@ -50,6 +50,10 @@ export default function StressPage() {
             setTimeout(() => {
                 setCurrentStep((prev) => prev + 1);
             }, 300);
+        } else {
+            setTimeout(() => {
+                handleComplete();
+            }, 300);
         }
     };
 
