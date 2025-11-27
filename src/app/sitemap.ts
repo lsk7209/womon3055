@@ -68,6 +68,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "monthly",
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/blog/sleep-quality-improvement`,
+            lastModified: currentDate,
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/stress-management-techniques`,
+            lastModified: currentDate,
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/iron-deficiency-women`,
+            lastModified: currentDate,
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/hormone-balance-foods`,
+            lastModified: currentDate,
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/exercise-for-40s-women`,
+            lastModified: currentDate,
+            changeFrequency: "monthly",
+            priority: 0.8,
+        },
         // 가이드 인덱스
         {
             url: `${baseUrl}/guide`,

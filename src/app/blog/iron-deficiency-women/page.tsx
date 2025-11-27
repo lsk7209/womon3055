@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, ArrowLeft, Share2, Droplet, Utensils, AlertCircle, Pill } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Share2, Droplet, Utensils, AlertCircle, Pill, Coffee } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "여성의 철분 부족, 왜 중요한가요? | 나이스우먼 블로그",

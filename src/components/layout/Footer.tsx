@@ -34,6 +34,7 @@ export function Footer() {
                         <h4 className="font-semibold text-gray-900">정보</h4>
                         <ul className="space-y-2 text-sm text-gray-600">
                             <li><Link href="/about" className="hover:text-rose-600 transition-colors">소개</Link></li>
+                            <li><Link href="/blog" className="hover:text-rose-600 transition-colors">블로그</Link></li>
                             <li><Link href="/faq" className="hover:text-rose-600 transition-colors">FAQ</Link></li>
                             <li><Link href="/contact" className="hover:text-rose-600 transition-colors">문의</Link></li>
                             <li><Link href="/privacy" className="hover:text-rose-600 transition-colors">개인정보처리방침</Link></li>
