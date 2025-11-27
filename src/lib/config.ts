@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
     description:
         "30~55세 여성의 신체 변화를 데이터 기반 자가진단, 성분 기반 정보, 연령별 루틴으로 안내하는 건강 플랫폼",
     tagline: "불안 대신 데이터로, 막연함 대신 루틴으로",
-    url: "https://nicewoman.kr", // 실제 도메인으로 교체
+    url: "https://nicewomen.kr", // 실제 도메인
     ogImage: "/og-image.png",
     keywords: [
         "여성 건강",
@@ -25,7 +25,7 @@ export const SITE_CONFIG = {
         "50대 여성",
     ],
     author: "Health Lab Research Team",
-    email: "contact@nicewoman.kr",
+    email: "contact@nicewomen.kr",
     social: {
         instagram: "",
         youtube: "",

@@ -1,7 +1,7 @@
 import { SITE_CONFIG } from "@/lib/config";
 
 export async function GET() {
-    const baseUrl = "https://nicewoman.kr";
+    const baseUrl = "https://nicewomen.kr";
 
     const blogPosts = [
         {

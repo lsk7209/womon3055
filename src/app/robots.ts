@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ["/api/", "/tools/*/result"], // 결과 페이지는 크롤링 방지 (개인 데이터)
             },
         ],
-        sitemap: "https://nicewoman.kr/sitemap.xml",
+        sitemap: "https://nicewomen.kr/sitemap.xml",
     };
 }
