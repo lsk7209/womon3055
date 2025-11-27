@@ -150,6 +150,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         // 도구 페이지 (소개)
         {
+            url: `${baseUrl}/tools`,
+            lastModified: currentDate,
+            changeFrequency: "weekly",
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/tools/hormone`,
             lastModified: currentDate,
             changeFrequency: "monthly",

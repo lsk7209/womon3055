@@ -8,6 +8,7 @@ export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navLinks = [
+        { href: "/tools", label: "자가진단" },
         { href: "/guide", label: "가이드" },
         { href: "/blog", label: "블로그" },
         { href: "/about", label: "소개" },
