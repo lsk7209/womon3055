@@ -10,8 +10,6 @@ export function Header() {
     const navLinks = [
         { href: "/guide", label: "가이드" },
         { href: "/blog", label: "블로그" },
-        { href: "/search", label: "검색" },
-        { href: "/bookmarks", label: "북마크" },
         { href: "/about", label: "소개" },
         { href: "/contact", label: "문의" },
     ];
