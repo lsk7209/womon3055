@@ -8,6 +8,7 @@ interface QuestionSliderProps {
     onChange: (value: number) => void;
     labels: [string, string, string, string];
     description?: string;
+    onAutoAdvance?: () => void;
 }
 
 export function QuestionSlider({
@@ -15,6 +16,7 @@ export function QuestionSlider({
     onChange,
     labels,
     description,
+    onAutoAdvance,
 }: QuestionSliderProps) {
     return (
         <div className="space-y-8 py-4">
@@ -39,7 +41,10 @@ export function QuestionSlider({
                 {labels.map((label, index) => (
                     <div
                         key={index}
-                        onClick={() => onChange(index)}
+                        onClick={() => {
+                            onChange(index);
+                            onAutoAdvance?.();
+                        }}
                         className={cn(
                             "cursor-pointer transition-colors rounded-lg py-2 px-1",
                             value === index

@@ -45,6 +45,14 @@ export default function NutrientsPage() {
         router.push("/tools/nutrients/result");
     };
 
+    const handleAutoAdvance = () => {
+        if (currentStep < NUTRIENT_QUESTIONS.length - 1) {
+            setTimeout(() => {
+                setCurrentStep((prev) => prev + 1);
+            }, 300);
+        }
+    };
+
     const currentQuestion = NUTRIENT_QUESTIONS[currentStep];
     const currentAnswer = answers[currentQuestion.id] ?? 0;
 
@@ -72,6 +80,7 @@ export default function NutrientsPage() {
                         <QuestionSlider
                             value={currentAnswer}
                             onChange={handleAnswer}
+                            onAutoAdvance={handleAutoAdvance}
                             labels={currentQuestion.labels}
                             description={currentQuestion.description}
                         />

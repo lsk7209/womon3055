@@ -45,6 +45,14 @@ export default function StressPage() {
         router.push("/tools/stress/result");
     };
 
+    const handleAutoAdvance = () => {
+        if (currentStep < STRESS_QUESTIONS.length - 1) {
+            setTimeout(() => {
+                setCurrentStep((prev) => prev + 1);
+            }, 300);
+        }
+    };
+
     const currentQuestion = STRESS_QUESTIONS[currentStep];
     const currentAnswer = answers[currentQuestion.id] ?? 0;
 
@@ -72,6 +80,7 @@ export default function StressPage() {
                         <QuestionSlider
                             value={currentAnswer}
                             onChange={handleAnswer}
+                            onAutoAdvance={handleAutoAdvance}
                             labels={currentQuestion.labels}
                             description={currentQuestion.description}
                         />

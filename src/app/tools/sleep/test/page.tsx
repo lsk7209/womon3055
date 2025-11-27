@@ -46,6 +46,14 @@ export default function SleepPage() {
         router.push("/tools/sleep/result");
     };
 
+    const handleAutoAdvance = () => {
+        if (currentStep < SLEEP_QUESTIONS.length - 1) {
+            setTimeout(() => {
+                setCurrentStep((prev) => prev + 1);
+            }, 300);
+        }
+    };
+
     const currentQuestion = SLEEP_QUESTIONS[currentStep];
     const currentAnswer = answers[currentQuestion.id] ?? 0;
 
@@ -73,6 +81,7 @@ export default function SleepPage() {
                         <QuestionSlider
                             value={currentAnswer}
                             onChange={handleAnswer}
+                            onAutoAdvance={handleAutoAdvance}
                             labels={currentQuestion.labels}
                             description={currentQuestion.description}
                         />

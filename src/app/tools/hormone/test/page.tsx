@@ -40,6 +40,14 @@ export default function HormoneTestPage() {
         router.push("/tools/hormone/result");
     };
 
+    const handleAutoAdvance = () => {
+        if (currentStep < HORMONE_QUESTIONS.length - 1) {
+            setTimeout(() => {
+                setCurrentStep((prev) => prev + 1);
+            }, 300); // 300ms 딜레이로 자연스러운 전환
+        }
+    };
+
     const currentQuestion = HORMONE_QUESTIONS[currentStep];
     const currentAnswer = answers[currentQuestion.id] ?? 0;
 
@@ -67,6 +75,7 @@ export default function HormoneTestPage() {
                         <QuestionSlider
                             value={currentAnswer}
                             onChange={handleAnswer}
+                            onAutoAdvance={handleAutoAdvance}
                             labels={currentQuestion.labels}
                             description={currentQuestion.description}
                         />
